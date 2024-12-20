@@ -1,0 +1,160 @@
+.Leftside {
+    background: linear-gradient(135deg, #160833, #6a4bcd);
+    color: white;
+    height: 100vh; 
+  
+}
+
+.Leftside-top {
+    padding: 20px;
+}
+
+
+.Leftside-nav{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.logo {
+    width: 60px;
+}
+
+.logo-text {
+    font-size: 35px;
+}
+
+.Leftside-nav .menu img{
+    max-height: 30px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+.Leftside-search {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    margin-top: 20px;
+}
+
+.Leftside-search img{
+    width: 16px;
+  
+}
+
+.Leftside-search input{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 12px;
+}
+
+
+.Leftside-search input::placeholder{
+    color: black;
+}
+
+
+
+.Leftside-list {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    overflow-y: scroll;
+}
+
+
+.friends img{
+    width: 35px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+
+.friends {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size:14px;
+}
+
+
+.friends div{
+    display: flex;
+    flex-direction: column;
+}
+
+.friends span {
+    color: gray;
+    font-size: 11px;
+}
+
+.friends:hover{
+   background-color: #402a86; 
+}
+
+
+.friends:hover span {
+    color: white;
+}
+
+
+.Leftside-nav .menu{
+    position: relative;
+    padding: 10px 0px;
+
+}
+
+.menu .sub-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 130px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    display: none;
+}
+
+
+.sub-menu hr{
+    border: none;
+    height: 1px;
+    background: #a4a4a4;
+    margin: 8px 0px;
+}
+
+.sub-menu p{
+cursor: pointer;
+font-size: 14px;
+}
+
+.menu:hover .sub-menu{
+    display: block;
+}
+
+.friends.border img{
+    border: 3px solid #ffffff;
+}
+
+.friends.friends.border div span{
+    color:#fbfaff ;
+}
+
+@media (max-width:900px) {
+    .Leftside{
+        width: 100%;
+
+    }
+    .chat-box {
+        width: 100%;
+        justify-content: center;
+    }
+}
